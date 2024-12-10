@@ -45,6 +45,19 @@ void kali(int matriks1[10][10], int matriks2[10][10], int hasil[10][10], int bar
     }
 }
 
+int main(){
+    int baris, kolom;
+    int matriks1[10][10], matriks2[10][10], hasil[10][10];
+
+    cout << "Masukkan jumlah barisan: ";
+    cin >> baris;
+    cout << "Masukkan jumlah kolom: ";
+    cin >> kolom;
+
+    cout << "Masukkan elemen untuk Matriks 1:" << endl;
+    masuk(matriks1, baris, kolom);
+    cout << "Masukkan elemen untuk Matriks 2:" << endl;
+    masuk(matriks2, baris, kolom);
 
 
 
