@@ -59,5 +59,17 @@ int main(){
     cout << "Masukkan elemen untuk Matriks 2:" << endl;
     masuk(matriks2, baris, kolom);
 
+    int pilih;
+    do{
+        cout << "\nMenu Operasi Matriks:" << endl;
+        cout << "1. Penjumlahan Matriks" << endl;
+        cout << "2. Pengurangan Matriks" << endl;
+        cout << "3. Perkalian Matriks" << endl;
+        cout << "4. Keluar" << endl;
+        cout << "Pilih Opsi: ";
+        cin >> pilih;
+
+
+
 
 
