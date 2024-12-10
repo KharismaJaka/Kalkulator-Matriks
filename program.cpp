@@ -69,6 +69,36 @@ int main(){
         cout << "Pilih Opsi: ";
         cin >> pilih;
 
+        switch (pilih) {
+            case 1: {
+                tambah(matriks1, matriks2, hasil, baris, kolom);
+                cout << "Hasil penjumlahan matriks:" << endl;
+                keluar(hasil, baris, kolom);
+                break;
+            }
+            case 2: {
+                kurang(matriks1, matriks2, hasil, baris, kolom);
+                cout << "Hasil pengurangan matriks:" << endl;
+                keluar(hasil, baris, kolom);
+                break;
+            } 
+            case 3: {
+                kali(matriks1, matriks2, hasil, baris, kolom);
+                cout << "Hasil perkalian matriks:" << endl;
+                keluar(hasil, baris, kolom);
+                break;
+            }
+            case 4: {
+                cout <, "Keluar dari program..." << endl;
+                break;
+            default:
+                cout << "Opsi tidak valid. Silakan coba lagi." << endl;
+            }
+        } while (pilih ≠ 4);
+
+        return 0;
+    }
+
 
 
 
