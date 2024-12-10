@@ -34,4 +34,17 @@ void kurang(int matriks1[10][10], int matriks2[10][10], int hasil[10][10], int b
     }
 }
 
+void kali(int matriks1[10][10], int matriks2[10][10], int hasil[10][10], int baris1, int kolom1, int kolom2){
+    for (int i = 0; i < baris1; i++){
+        for (int j = 0; j < kolom2; j++){
+            hasil[i][j] = 0;
+            for (int k = 0; k < kolom1; k++){
+                hasil[i][j] += matriks1[i][k] * matriks2[k][j];
+            }
+        }
+    }
+}
+
+
+
 
